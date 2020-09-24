@@ -1,0 +1,73 @@
+{
+    "languageserver": {
+
+//        "ccls": {
+//            "command": "ccls",
+//            "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
+//            "rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/"],
+//            "initializationOptions": {
+//                "cache": {
+//                    "directory": "/tmp/ccls"
+//                }
+//            }
+//        },
+
+        // fortran    
+        "fortran": {
+            "command": "fortls",
+            "filetypes": ["fortran"],
+            "rootPatterns": [".fortls", ".git/"]
+        },
+
+        // bash
+        "bash": {
+            "command": "bash-language-server",
+            "args": ["start"],
+            "filetypes": ["sh"],
+            "ignoredRootPaths": ["~"]
+        }
+
+//        "efm": {
+//            "command": "efm-langserver",
+//            "args": [],
+//            // custom config path
+//            // "args": ["-c", "/path/to/your/config.yaml"],
+//            "filetypes": ["vim", "eruby", "markdown"]
+//        }
+    },
+
+    "cSpell.userWords": [
+        "Higgs",
+        "Supersymmetric",
+        "Supersymmetry",
+        "cventries",
+        "cvitem",
+        "cvitems",
+        "cvsection",
+        "iostream"
+    ],
+
+    "markmap.mathJax": {
+        "tex": {
+            "inlineMath": [
+                ["$", "$"],
+                ["\\(", "\\)"]
+            ]
+        }
+    },
+
+    "cSpell.enabledLanguageIds": [
+        "git-commit",
+        "html",
+        "jsonc",
+        "latex",
+        "markdown",
+        "plaintext",
+        "restructuredtext",
+        "text",
+        "yaml",
+        "yml"
+    ],
+
+    "coc.preferences.jumpCommand": "drop"
+}
