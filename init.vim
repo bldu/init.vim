@@ -538,7 +538,7 @@ let g:which_key_map['w'] = {
 
 " easymotion configuration from 
 "https://github.com/liuchengxu/vim-which-key/issues/10#issuecomment-432767186
-let g:which_key_map[' '] = {
+let g:which_key_map['m'] = {
       \ 'name' : '+Easymotion ' ,
       \ 'f' : ['<plug>(easymotion-prefix)f' , 'find {char} to the right'],
       \ 'F' : ['<plug>(easymotion-prefix)F' , 'find {char} to the left'],
@@ -565,9 +565,8 @@ let g:which_key_map[' '] = {
 
 
 "jump to latest buffer
-"nnoremap <space><tab> <C-^>
-nnoremap <space><tab> :buffer#<CR>
-let g:which_key_map['<tab>'] = {'name' : 'latest buffer'}
+"let g:which_key_map['<tab>'] = [':buffer#' , 'latest buffer']
+nnoremap <space><tab> :buffer#<cr>
 
 let g:which_key_map.b = {'name' : '+buffers'}
 
@@ -598,6 +597,7 @@ let g:which_key_map.H   = 'command history(fzf)'
 
 nnoremap <space>c :Command<cr>
 let g:which_key_map.c = 'command(fzf)'
+"let g:which_key_map[' '] = [':Command<cr>' , 'command(fzf)']
 
 
 "open terminal in a split resized window.
